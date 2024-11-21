@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK AMANAGEMENT APP</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="title"><h1>TaskMate</h1></div>
+        <div class="nav">
+            <nav>
+                <button id="new"><i class="fa-solid fa-plus"></i>  New Task</button>
+                <button id="pending"><i class="fa-regular fa-clock"></i>  Pending Tasks</button>
+                <button id="completed"><i class="fa-solid fa-check-double"></i>Completed Tasks</button>
+            </nav>
+        </div>
+        <div class="addNewTask" id="add">
+            <form action="" id="form">
+                <h3>Add a task here</h3>
+                <input type="text" name="" id="title" placeholder="Task title goes here..."><br>
+                <textarea id="description" placeholder="Add a description of the task"></textarea><br>
+                <label for="date">Due date</label>
+                <input type="date" name="" id="date"><br>
+                <select id="priority">
+                  <option value="" disabled selected>Select a priority</option>
+                  <option value="low">Low</option>
+                  <option value="medium">Medium</option>
+                  <option value="high">High</option>
+                </select>
+                <button id="submitButton" type="submit">Add to the tracker</button>
+            </form>
+            
+        </div>
+        <div id="pending_tasks"></div>
+        <div class="completed_tasks"></div>
+    </div>
+    <script src="https://kit.fontawesome.com/d8f6c40ad7.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

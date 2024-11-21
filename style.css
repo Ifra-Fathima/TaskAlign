@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 150%;
+    margin-top: 10px;
+    color: rgb(76, 140, 146);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nav button{
+    width: 250px;
+    height: auto;
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px;
+    color: black;
+    border: 1px solid rgb(76, 140, 146);
+    background-color: rgb(248, 252, 0);
+    border-radius: 20px;
+    transition: transform 0.1s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.nav i{
+    margin: 5px;
+    color: black;
+}
+
+.nav button:hover{
+    background-color:beige;
+}
+
+.nav button:active{
+    transform: scale(0.95);;
+}
+
+
+
+.addNewTask{
+    display: flex;
+    justify-content: center;
+    /* visibility: hidden; */
+}
+
+.addNewTask input,textarea,select{
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(76, 140, 146);
+    cursor: pointer;
+}
+
+
+label{
+    font-size: 20px;
+    margin: 15px;
+}
+
+.addNewTask button{
+    display: flex;
+    margin: 15px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: transform 0.1s ease, background-color 0.3s ease;
+    border: 1px solid rgb(76, 140, 146);
+    background-color: rgb(248, 252, 0);
+    width: max-content;
+    cursor: pointer;
+}
+
+.addNewTask button:hover{
+    background-color:beige;
+}
+
+.addNewTask button:active{
+    transform: scale(0.95);
+}
+
+.display{
+    visibility: visible;
+    transition: visibility 0.3s ease; 
+    
+}
+
+.task{
+    margin: 10px;
+    padding: 10px;
+}
