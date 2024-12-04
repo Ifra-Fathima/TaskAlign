@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .title{
@@ -10,13 +11,13 @@
     font-size: 150%;
     margin-top: 10px;
     color: rgb(76, 140, 146);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .nav{
     display: flex;
     justify-content: space-around;
     width: 100%;
+    
 }
 
 .nav button{
@@ -31,6 +32,7 @@
     border-radius: 20px;
     transition: transform 0.1s ease, background-color 0.3s ease;
     cursor: pointer;
+    
 }
 
 .nav i{
@@ -63,6 +65,7 @@
     border-radius: 5px;
     border: 1px solid rgb(76, 140, 146);
     cursor: pointer;
+    
 }
 
 
@@ -82,6 +85,7 @@ label{
     background-color: rgb(248, 252, 0);
     width: max-content;
     cursor: pointer;
+    
 }
 
 .addNewTask button:hover{
@@ -99,6 +103,70 @@ label{
 }
 
 .task{
-    margin: 10px;
+    margin: 2dvh;
     padding: 10px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(76, 140, 146);
+    border-style: outset;
+    border-top: none;
+    border-right: none;
+    
+}
+
+.task button{
+    margin: 0px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: transform 0.1s ease, background-color 0.3s ease;
+    border: 1px solid rgb(76, 140, 146);
+    background-color: rgb(248, 252, 0);
+    width: max-content;
+    cursor: pointer;
+    
+}
+
+.task button:hover{
+    background-color:beige;
+}
+
+.task button:active{
+    transform: scale(0.95);;
+}
+
+#pending_tasks h1{
+    padding-left: 15px;
+    padding-bottom: 8px;
+    color: rgb(76, 140, 146);
+    border: 2px solid black;
+    margin: 17px;
+    
+}
+
+#completed_tasks h1{
+        padding-left: 15px;
+        padding-bottom: 8px;
+        color: rgb(76, 140, 146);
+        border: 2px solid black;
+        margin: 17px;
+}
+
+.filters button{
+    width: 500px;
+    height: 50px;
+    margin: 30px;
+    font-size: 30px;
+}
+
+
+#completed_tasks {
+    text-decoration: line-through;
+    color: gray;
+    background-color: #f0f0f0;
+}
+
+.hidden {
+    display: none;
 }

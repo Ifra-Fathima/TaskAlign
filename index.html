@@ -9,12 +9,12 @@
 </head>
 <body>
     <div class="container">
-        <div class="title"><h1>TaskMate</h1></div>
+        <div class="title"><h1>TaskAlign</h1></div>
         <div class="nav">
             <nav>
-                <button id="new"><i class="fa-solid fa-plus"></i>  New Task</button>
-                <button id="pending"><i class="fa-regular fa-clock"></i>  Pending Tasks</button>
-                <button id="completed"><i class="fa-solid fa-check-double"></i>Completed Tasks</button>
+                <button id="new" ><i class="fa-solid fa-plus"></i>  New Task</button>
+                <button id="pending"><i class="fa-regular fa-clock"></i>  Show Pending Tasks</button>
+                <button id="completed"><i class="fa-solid fa-check-double"></i> Show Completed Tasks</button>
             </nav>
         </div>
         <div class="addNewTask" id="add">
@@ -26,16 +26,28 @@
                 <input type="date" name="" id="date"><br>
                 <select id="priority">
                   <option value="" disabled selected>Select a priority</option>
-                  <option value="low">Low</option>
-                  <option value="medium">Medium</option>
-                  <option value="high">High</option>
+                  <option value="Low">Low</option>
+                  <option value="Medium">Medium</option>
+                  <option value="High">High</option>
                 </select>
                 <button id="submitButton" type="submit">Add to the tracker</button>
             </form>
-            
         </div>
-        <div id="pending_tasks"></div>
-        <div class="completed_tasks"></div>
+        <div class="filters">
+            <label for="filter-priority">Filter by Priority: </label>
+            <select id="filter-priority">
+                <option value="all" selected>All</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            
+            <button id="filterDue">Filter Due in 7 Days</button>
+            <div id="filtered-tasks"></div>
+        </div>
+        <div id="pending_tasks" class="hidden">
+        </div>
+        <div id="completed_tasks" class="hidden"></div>
     </div>
     <script src="https://kit.fontawesome.com/d8f6c40ad7.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
